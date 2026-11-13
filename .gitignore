@@ -1,0 +1,10 @@
+# .NET build output
+bin/
+obj/
+tools/ingest/bin/
+
+# Generated index (large, rebuilt by ingest tool)
+data/index.json
+data/index.json.tmp
+
+.env
