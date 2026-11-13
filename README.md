@@ -11,7 +11,7 @@ repo/
     story-chunks.json
     project-chunks.json
     consulting-cv.json
-  tools/Ingest/        <- this folder
+  tools/ingest/        <- this folder
   api/
 ```
 
@@ -20,7 +20,7 @@ Every `*.json` file in `data/` (except `index.json`) is treated as a chunk file.
 ## One-time setup
 
 ```bash
-cd tools/Ingest
+cd tools/ingest
 dotnet add package Azure.AI.OpenAI
 dotnet add package Azure.Identity
 dotnet add package Microsoft.Extensions.AI.OpenAI
@@ -41,9 +41,9 @@ Your account needs the **Cognitive Services OpenAI User** role on the Azure Open
 
 ```bash
 # From the repo root
-dotnet run --project tools/Ingest -- --dry-run     # validate only, no Azure calls
-dotnet run --project tools/Ingest                  # embed and write data/index.json
-dotnet run --project tools/Ingest -- --force       # re-embed everything
+dotnet run --project tools/ingest -- --dry-run     # validate only, no Azure calls
+dotnet run --project tools/ingest                  # embed and write data/index.json
+dotnet run --project tools/ingest -- --force       # re-embed everything
 ```
 
 Options: `--data <dir>`, `--out <file>`, `--endpoint <url>`, `--deployment <name>`, `--dry-run`, `--force`.

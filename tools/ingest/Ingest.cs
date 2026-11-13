@@ -90,7 +90,7 @@ internal static class Program
         foreach (var c in chunks)
         {
             var input = EmbedInput(c);
-            var hash = ComputeHash(deployment, input);
+            var hash = ComputeHash(opts.Endpoint!, deployment, input);
 
             if (existing.TryGetValue(c.Id, out var old) && old.Hash == hash && old.Vector is { Length: > 0 })
                 indexed[c.Id] = Build(c, hash, old.Vector); // reuse vector, refresh metadata
@@ -267,9 +267,9 @@ internal static class Program
     // Title is included because it gives the embedding useful context ("Story: ...", "Project: ...").
     private static string EmbedInput(Chunk c) => $"{c.Title}\n{c.Text}";
 
-    // Hash includes the deployment so switching embedding models forces a full re-embed.
-    private static string ComputeHash(string deployment, string input) =>
-        Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes($"{deployment}\n{input}")));
+    // Hash includes the endpoint and deployment so switching resources or models forces a full re-embed.
+    private static string ComputeHash(string endpoint, string deployment, string input) =>
+        Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes($"{endpoint}\n{deployment}\n{input}")));
 
     private static IndexedChunk Build(Chunk c, string hash, float[] vector) =>
         new(c.Id, c.Type, c.Title, c.Text, c.Org, c.Period, c.Source, c.Tags, c.Related, c.File, hash, vector);
