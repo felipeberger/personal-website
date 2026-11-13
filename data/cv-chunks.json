@@ -1,0 +1,192 @@
+[
+  {
+    "id": "profile-summary",
+    "source": "software-cv",
+    "type": "summary",
+    "title": "Professional summary",
+    "org": null,
+    "period": null,
+    "tags": ["summary", "backend", "rails", "postgresql", "reliability"],
+    "text": "Felipe Berger is a backend software engineer with 4+ years of experience designing, building and maintaining backend services, APIs, third-party integrations and data-intensive systems. His strengths are Ruby on Rails, PostgreSQL and production debugging, with a focus on reliability, performance, testing and maintainable architecture. He has supported production systems used by 150k+ users and has worked directly with users and stakeholders to solve complex problems."
+  },
+  {
+    "id": "contact-links",
+    "source": "software-cv",
+    "type": "contact",
+    "title": "Location and links",
+    "org": null,
+    "period": null,
+    "tags": ["contact", "location", "links"],
+    "text": "Felipe Berger is based in Canberra, ACT, Australia. His code is on GitHub at github.com/felipeberger and his LinkedIn profile is linkedin.com/in/felipe-berger."
+  },
+  {
+    "id": "cardcastle-overview",
+    "source": "software-cv",
+    "type": "experience",
+    "title": "Backend Developer at CardCastle (overview)",
+    "org": "CardCastle",
+    "period": "June 2022 - May 2026",
+    "tags": ["cardcastle", "rails", "backend", "apis", "scale"],
+    "text": "From June 2022 to May 2026 (about four years) Felipe worked as a Backend Developer at CardCastle in Australia. He designed and maintained Rails backend services and APIs supporting 150k+ users across B2C and B2B platforms. His work covered performance, large data processing, legacy code refactoring, testing, new feature design and production support."
+  },
+  {
+    "id": "cardcastle-performance",
+    "source": "software-cv",
+    "type": "experience",
+    "title": "CardCastle: performance and query optimisation",
+    "org": "CardCastle",
+    "period": "June 2022 - May 2026",
+    "tags": ["performance", "sql", "postgresql", "n+1", "indexes", "datadog", "exports", "optimisation"],
+    "text": "At CardCastle, Felipe redesigned a core data-export system, improving performance by over 70% for large exports and resolving out-of-memory failures for very large jobs. He also reduced API response times from over 1.5 seconds to under 0.5 seconds by refactoring legacy SQL queries, fixing N+1 queries and adding indexes, guided by query plans and observability tooling."
+  },
+  {
+    "id": "cardcastle-rust-migration",
+    "source": "software-cv",
+    "type": "experience",
+    "title": "CardCastle: migrating a background job to a Rust microservice",
+    "org": "CardCastle",
+    "period": "June 2022 - May 2026",
+    "tags": ["rust", "microservice", "background-jobs", "migration", "performance"],
+    "text": "At CardCastle, Felipe assisted in migrating a daily background job that processed large third-party data files to a Rust microservice. The migration reduced execution time by 66%. This is his main professional experience with Rust."
+  },
+  {
+    "id": "cardcastle-legacy-testing",
+    "source": "software-cv",
+    "type": "experience",
+    "title": "CardCastle: legacy refactoring and testing",
+    "org": "CardCastle",
+    "period": "June 2022 - May 2026",
+    "tags": ["testing", "tdd", "factorybot", "rspec", "refactoring", "legacy", "integrations"],
+    "text": "At CardCastle, Felipe refactored a 10-year-old mission-critical codebase, improving maintainability, extensibility and test coverage. He built a FactoryBot-based framework of mock payloads for upstream pricing providers, which allowed the full price-update workflow to be tested automatically for the first time without external connections. He also implemented automated unit and integration tests and applied test-driven development to improve reliability and reduce regressions."
+  },
+  {
+    "id": "cardcastle-inventory",
+    "source": "software-cv",
+    "type": "experience",
+    "title": "CardCastle: inventory management system",
+    "org": "CardCastle",
+    "period": "June 2022 - May 2026",
+    "tags": ["inventory", "product-design", "customer-research", "backend", "feature"],
+    "text": "At CardCastle, Felipe helped design and implement an inventory management system by combining customer research insights with engineering requirements. He implemented the backend logic, routes and unit tests, supporting users of different operational sizes."
+  },
+  {
+    "id": "cardcastle-support",
+    "source": "software-cv",
+    "type": "experience",
+    "title": "CardCastle: production support and debugging",
+    "org": "CardCastle",
+    "period": "June 2022 - May 2026",
+    "tags": ["production", "debugging", "support", "datadog", "bugsnag", "incident"],
+    "text": "At CardCastle, Felipe acted as technical support when customer service escalated production issues. His process was to investigate logs and Datadog, replicate the error, and implement a tested fix."
+  },
+  {
+    "id": "betterwritter-internship",
+    "source": "software-cv",
+    "type": "experience",
+    "title": "Full-stack Software Engineer Internship at betterwritter.ai",
+    "org": "betterwritter.ai",
+    "period": "March 2022 - May 2022",
+    "tags": ["internship", "fullstack", "react", "rails", "testing", "remote"],
+    "text": "From March to May 2022 Felipe did a remote Full-stack Software Engineer internship at betterwritter.ai. He increased test coverage from 60% to 85%, improving release confidence and reducing defects. He also refactored React components and Rails backend logic into modular, reusable components following OOP principles."
+  },
+  {
+    "id": "relive-digital",
+    "source": "software-cv",
+    "type": "experience",
+    "title": "Junior Software Engineer at Relive Digital",
+    "org": "Relive Digital",
+    "period": "July 2021 - May 2022",
+    "tags": ["graphql", "aws", "lambda", "appsync", "serverless", "vue", "figma"],
+    "text": "From July 2021 to May 2022 Felipe worked as a Junior Software Engineer at Relive Digital in Australia. He built GraphQL resolvers using AWS Lambda and AppSync for a scalable serverless backend architecture. He also created UI mockups in Figma and implemented frontend components in Vue.js."
+  },
+  {
+    "id": "career-customer-research",
+    "source": "software-cv",
+    "type": "experience",
+    "title": "Earlier career: Senior Customer Research Manager and Consultant",
+    "org": "Various companies",
+    "period": "April 2013 - June 2021",
+    "tags": ["customer-research", "leadership", "consulting", "career-change", "sea"],
+    "text": "Before moving into software engineering, Felipe worked from 2013 to 2021 as a Senior Customer Research Manager and Consultant across Cambodia, Lao PDR, Australia, Singapore and remotely. He led over 35 projects and a team of four across the Southeast Asia region for government, business and NGO stakeholders. He led in-depth interviews, focus group discussions and co-creation workshops with business owners and service users to assess needs, barriers and solutions."
+  },
+  {
+    "id": "background-research-to-engineering",
+    "source": "software-cv",
+    "type": "faq",
+    "title": "How his research background shapes his engineering",
+    "org": null,
+    "period": null,
+    "tags": ["career-change", "customer-research", "stakeholders", "product"],
+    "text": "Felipe came to software engineering after eight years in customer research and consulting, and he retrained through a full-stack bootcamp from 2020 to 2021. He brings that background into engineering work, for example by combining customer research insights with engineering requirements when designing CardCastle's inventory management system, and by working directly with users and stakeholders to solve production problems."
+  },
+  {
+    "id": "education-bootcamp",
+    "source": "software-cv",
+    "type": "education",
+    "title": "Altcademy full-stack bootcamp",
+    "org": "Altcademy",
+    "period": "July 2020 - November 2021",
+    "tags": ["education", "bootcamp", "fullstack"],
+    "text": "Felipe completed the Altcademy Programming and Full-stack Web Development Bootcamp, from July 2020 to November 2021."
+  },
+  {
+    "id": "education-degrees",
+    "source": "software-cv",
+    "type": "education",
+    "title": "University degrees",
+    "org": "Seton Hall School of Law; St John's University",
+    "period": "2005 - 2011",
+    "tags": ["education", "law", "psychology", "degree"],
+    "text": "Felipe holds a Master of Science in Jurisprudence, specialising in Intellectual Property Law, from Seton Hall School of Law in the USA (September 2010 to December 2011). He also holds a Bachelor of Arts in Psychology with a minor in Entrepreneurship from St John's University in the USA (September 2005 to May 2009)."
+  },
+  {
+    "id": "cert-pmp",
+    "source": "software-cv",
+    "type": "certification",
+    "title": "Project Management Professional (PMP)",
+    "org": "Project Management Institute (PMI)",
+    "period": "December 2018",
+    "tags": ["certification", "project-management", "pmp"],
+    "text": "Felipe earned the Project Management Professional (PMP) certification from the Project Management Institute (PMI) in December 2018."
+  },
+  {
+    "id": "skills-backend",
+    "source": "software-cv",
+    "type": "skill",
+    "title": "Backend and database skills",
+    "org": null,
+    "period": null,
+    "tags": ["rails", "rust", "rest", "webhooks", "postgresql", "graphql", "backend"],
+    "text": "Felipe's backend and database skills include Ruby on Rails, Rust, REST APIs, webhooks, PostgreSQL and GraphQL. His strongest and most extensive experience is with Ruby on Rails and PostgreSQL, used professionally for about four years at CardCastle. He has used Rust in production for a microservice migration, and GraphQL at Relive Digital."
+  },
+  {
+    "id": "skills-frontend",
+    "source": "software-cv",
+    "type": "skill",
+    "title": "Frontend skills",
+    "org": null,
+    "period": null,
+    "tags": ["javascript", "typescript", "html", "css", "vue", "react", "frontend"],
+    "text": "Felipe's frontend skills include JavaScript, TypeScript, HTML, CSS, Vue and React. He has used Vue.js at Relive Digital and React at betterwritter.ai. His career focus is backend development."
+  },
+  {
+    "id": "skills-testing",
+    "source": "software-cv",
+    "type": "skill",
+    "title": "Testing skills",
+    "org": null,
+    "period": null,
+    "tags": ["rspec", "factorybot", "tdd", "unit-testing", "integration-testing", "testing"],
+    "text": "Felipe's testing skills include RSpec, FactoryBot, test-driven development, unit testing and integration testing. He raised test coverage from 60% to 85% during an internship, and at CardCastle he built a mock-payload framework for pricing providers and applied TDD to reduce regressions."
+  },
+  {
+    "id": "skills-cloud-tools",
+    "source": "software-cv",
+    "type": "skill",
+    "title": "Cloud and tooling skills",
+    "org": null,
+    "period": null,
+    "tags": ["aws", "git", "linux", "gitlab", "ci-cd", "datadog", "bugsnag", "observability"],
+    "text": "Felipe's cloud and tooling skills include AWS, Git, Linux, GitLab CI/CD, Datadog and Bugsnag. He has used AWS Lambda and AppSync for serverless GraphQL, and uses Datadog and Bugsnag for observability and production debugging."
+  }
+]

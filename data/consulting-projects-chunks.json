@@ -1,0 +1,79 @@
+[
+  {
+    "id": "projects-consulting-overview",
+    "source": "consulting-projects",
+    "type": "summary",
+    "title": "Overview of Felipe's development consulting projects in Southeast Asia (2014-2017)",
+    "org": null,
+    "period": "2014 - 2017",
+    "tags": ["consulting", "development", "energy", "cambodia", "myanmar", "overview", "projects"],
+    "related": ["career-customer-research", "project-nbp-business-plan", "project-rise-world-bank", "project-seac-strategic-plan", "project-access-to-energy-cafod", "project-solar-b2b-market-assessment"],
+    "text": "Between 2014 and 2017 Felipe worked on development and market consulting projects in Southeast Asia, mainly in the energy sector, in Cambodia and Myanmar. His clients included the World Bank, SNV and CAFOD, plus one confidential client. His role grew from consultant (2014) to lead consultant (2015) and then project manager and lead consultant (2016 and 2017). Felipe conducted market assessments, regulatory and policy analysis, stakeholder interviews and consultations, strategic planning, and financial modelling."
+  },
+  {
+    "id": "project-solar-b2b-market-assessment",
+    "source": "consulting-projects",
+    "type": "project",
+    "title": "Project: B2B rooftop solar market assessment (Cambodia, 2017)",
+    "org": "Confidential client",
+    "period": "2017",
+    "tags": ["solar", "renewable-energy", "market-assessment", "cambodia", "ppa", "b2b", "project-management"],
+    "related": ["projects-consulting-overview"],
+    "text": "In 2017 Felipe was project manager and lead consultant on a B2B rooftop solar market assessment in Cambodia for a confidential client. The study assessed demand for rooftop solar energy from the commercial and industrial sector in Phnom Penh. The client was looking to finance the installation and maintenance of solar panels on factory or commercial building rooftops and sell the electricity directly to the consumer through a lease agreement or power purchase agreement (PPA), to improve the reliability of the consumer's supply and lower their costs. Felipe's team conducted interviews with potential customers, analyzed the regulatory environment, and assessed the market potential for rooftop solar in Phnom Penh through a rooftop surface area analysis of Phnom Pehn factories, hotels, and other commercial buildings."
+  },
+  {
+    "id": "project-access-to-energy-cafod",
+    "source": "consulting-projects",
+    "type": "project",
+    "title": "Project: Access to Energy Assessments for CAFOD (Cambodia and Myanmar, 2016)",
+    "org": "CAFOD",
+    "period": "2016",
+    "tags": ["energy-access", "regulation", "renewable-energy", "cambodia", "myanmar", "grid", "national-review", "project-management"],
+    "related": ["projects-consulting-overview", "projects-regulatory-policy-work"],
+    "text": "In 2016 Felipe was project manager and lead consultant on two separate Access to Energy Assessments for CAFOD, one in Cambodia and one in Myanmar. Each was a national review of energy uptake and of the barriers that households and commercial entities face in adopting grid or other electricity sources. Felipe analyzed the regulatory environment (focusing on regulatory barriers to the uptake of renewable energy), current and forecast grid expansion, energy consumption habits, and incentives for developing distributed renewable energy sources."
+  },
+  {
+    "id": "project-seac-strategic-plan",
+    "source": "consulting-projects",
+    "type": "project",
+    "title": "Project: Solar Energy Association of Cambodia 3-year strategic plan (2016)",
+    "org": "SNV",
+    "period": "2016",
+    "tags": ["solar", "strategic-planning", "market-assessment", "gap-analysis", "stakeholder-consultation", "cambodia", "kpis", "project-management"],
+    "related": ["projects-consulting-overview"],
+    "text": "In 2016 Felipe was project manager and lead consultant on a 3-year strategic plan for the Solar Energy Association of Cambodia (SEAC), for the client SNV. The work combined a market assessment and trend and gap analysis of Cambodia's solar energy sector with consultation of SEAC members and non-members. Felipe led the team in identifying strategic goals for the association (including specific solar energy uptake targets and key regulatory changes to encourage uptake), the activities that would achieve those goals, and indicators to monitor progress toward them."
+  },
+  {
+    "id": "project-rise-world-bank",
+    "source": "consulting-projects",
+    "type": "project",
+    "title": "Project: Regulatory Indicators for Sustainable Energy (RISE) for the World Bank (Cambodia, 2015)",
+    "org": "World Bank",
+    "period": "2015",
+    "tags": ["rise", "regulation", "renewable-energy", "world-bank", "cambodia", "interviews", "policy", "energy-potential"],
+    "related": ["projects-consulting-overview", "projects-regulatory-policy-work"],
+    "text": "In 2015 Felipe was lead consultant on the World Bank's Regulatory Indicators for Sustainable Energy (RISE) project in Cambodia. The project assessed Cambodia's current energy regulatory landscape and included in-depth interviews with a range of key stakeholders in the country's energy industry. Felipe performed the regulatory analysis, identifying regulatory barriers and incentives for investment in sustainable energy, as well as the energy potential of each sustainable energy source in Cambodia."
+  },
+  {
+    "id": "project-nbp-business-plan",
+    "source": "consulting-projects",
+    "type": "project",
+    "title": "Project: Business planning for the National Biodigester Programme (Cambodia, 2014)",
+    "org": "SNV",
+    "period": "2014",
+    "tags": ["biodigester", "financial-modelling", "business-plan", "investment-prospectus", "willingness-to-pay", "carbon-credits", "cambodia", "excel"],
+    "related": ["projects-consulting-overview"],
+    "text": "In 2014 Felipe was a consultant on business planning for the National Biodigester Programme (NBP) in Cambodia, for the client SNV. The project team drafted a financial model that included program cost analysis and revenue projections based on consumer willingness to pay and on potential financing options for buying biodigesters. From the model, Felipe calculated the program's funding requirements and potential financing sources, which could include carbon credits, donors, development organizations and private investors. The outputs were a detailed business plan to guide the NBP's strategic growth over the following months, and an investment prospectus for target funders in the private and development sectors showing the optimized program structure and revenue projections."
+  },
+  {
+    "id": "projects-regulatory-policy-work",
+    "source": "consulting-projects",
+    "type": "summary",
+    "title": "Felipe's regulatory and policy analysis experience in the energy sector",
+    "org": null,
+    "period": "2015 - 2016",
+    "tags": ["regulation", "policy", "energy", "renewable-energy", "cambodia", "myanmar", "world-bank", "cafod"],
+    "related": ["project-rise-world-bank", "project-access-to-energy-cafod", "education-degrees"],
+    "text": "Regulatory and policy analysis was a recurring theme in Felipe's consulting projects. In 2015 he was lead consultant on the World Bank's RISE project, assessing Cambodia's energy regulatory landscape and interviewing key industry stakeholders about regulatory barriers and incentives for renewable energy investment. In 2016 he was project manager and lead consultant on CAFOD's Access to Energy Assessments in Cambodia and Myanmar, which analyzed regulatory barriers to renewable energy uptake alongside grid expansion and incentives for distributed renewable energy."
+  }
+]

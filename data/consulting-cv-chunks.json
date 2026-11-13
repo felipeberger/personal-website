@@ -1,0 +1,178 @@
+[
+  {
+    "id": "consulting-cv-career-progression",
+    "source": "consulting-cv",
+    "type": "summary",
+    "title": "Felipe's consulting career progression and earlier regulatory roles",
+    "org": "Emerging Markets Consulting",
+    "period": "January 2010 - June 2021",
+    "tags": ["consulting", "career", "progression", "cambodia", "laos", "regulatory", "timeline"],
+    "related": ["career-customer-research", "consulting-cv-consultant-role", "consulting-cv-senior-consultant", "consulting-cv-regulatory-legal-background"],
+    "text": "Felipe Berger's consulting career ran from April 2013 to June 2021. He began as a Consultant at Emerging Markets Consulting in Phnom Penh, Cambodia (April 2013 to March 2016), became a Senior Consultant in April 2016, and moved to Vientiane, Laos in January 2017. His latest CV titles this period Senior Customer Research Manager and Consultant. Before consulting he worked in US regulatory roles: Regulatory Analyst at Porzio Life Sciences in 2010 and Regulatory Specialist at QPharma from 2012 to 2013."
+  },
+  {
+    "id": "consulting-cv-senior-consultant",
+    "source": "consulting-cv",
+    "type": "experience",
+    "title": "Senior Consultant: managing consulting and research projects across ASEAN",
+    "org": "Emerging Markets Consulting",
+    "period": "April 2016 - June 2021",
+    "tags": ["senior-consultant", "project-management", "asean", "market-entry", "market-sizing", "feasibility", "m&e", "regulatory-assessment"],
+    "related": ["consulting-cv-career-progression", "consulting-cv-business-development", "consulting-cv-team-leadership", "consulting-cv-sector-expertise"],
+    "text": "From April 2016 until his consulting career ended in June 2021, Felipe was a Senior Consultant, based in Phnom Penh until December 2016 and in Vientiane, Laos from January 2017. He managed consulting and industry research projects across the ASEAN region and led over 35 projects, including market entry studies, market sizing, regulatory assessments, feasibility studies and monitoring and evaluation (M&E), for a variety of private-sector and development clients."
+  },
+  {
+    "id": "consulting-cv-business-development",
+    "source": "consulting-cv",
+    "type": "experience",
+    "title": "Business development: winning proposals and pitching to clients",
+    "org": "Emerging Markets Consulting",
+    "period": "April 2016 - June 2021",
+    "tags": ["business-development", "proposals", "pitching", "sales", "cambodia", "lao-pdr", "myanmar"],
+    "related": ["consulting-cv-senior-consultant"],
+    "text": "As a Senior Consultant, Felipe was responsible for business development. He wrote winning proposals and pitched projects to clients in Cambodia, Lao PDR and Myanmar. Business development for consulting services is one of the skills he lists on his consulting CV."
+  },
+  {
+    "id": "consulting-cv-team-leadership",
+    "source": "consulting-cv",
+    "type": "experience",
+    "title": "Leading and building the capacity of local teams",
+    "org": "Emerging Markets Consulting",
+    "period": "April 2016 - June 2021",
+    "tags": ["leadership", "team-management", "capacity-building", "mentoring", "primary-research", "excel-modelling", "presentation"],
+    "related": ["consulting-cv-senior-consultant", "career-customer-research"],
+    "text": "As a Senior Consultant, Felipe led a team of four and was responsible for managing local team members and building their capacity in skills such as primary research, report writing, Excel modelling and presentation skills."
+  },
+  {
+    "id": "consulting-cv-sector-expertise",
+    "source": "consulting-cv",
+    "type": "skill",
+    "title": "Sector expertise: solar energy, labour markets and more",
+    "org": "Emerging Markets Consulting",
+    "period": "April 2016 - June 2021",
+    "tags": ["solar", "renewable-energy", "labour-market", "telecommunications", "insurance", "garments", "agriculture", "trade-and-investment", "development", "subject-matter-expert"],
+    "related": ["consulting-cv-senior-consultant", "projects-consulting-overview", "project-seac-strategic-plan", "project-solar-b2b-market-assessment"],
+    "text": "Felipe's consulting projects spanned renewable energy, telecommunications, insurance, garments, agriculture, trade and investment, and international development. He was his firm's subject matter expert on the solar energy sector and on labour market assessments in Cambodia, Laos and Myanmar."
+  },
+  {
+    "id": "consulting-cv-consultant-role",
+    "source": "consulting-cv",
+    "type": "experience",
+    "title": "Consultant at Emerging Markets Consulting (Phnom Penh)",
+    "org": "Emerging Markets Consulting",
+    "period": "April 2013 - March 2016",
+    "tags": ["consultant", "phnom-penh", "cambodia", "methodology", "primary-research", "secondary-research", "report-writing", "client-presentation"],
+    "related": ["consulting-cv-career-progression", "consulting-cv-beer-market-model", "consulting-cv-market-entry-studies", "consulting-cv-thai-seafood-labour", "consulting-cv-rice-contract-farming"],
+    "text": "From April 2013 to March 2016 Felipe was a Consultant at Emerging Markets Consulting in Phnom Penh, Cambodia. He managed projects and all related activities: developing the methodology, secondary and primary research, team and resource management, report writing, and client presentations."
+  },
+  {
+    "id": "consulting-cv-beer-market-model",
+    "source": "consulting-cv",
+    "type": "project",
+    "title": "Cambodia beer market analysis and 10-year demand model",
+    "org": "International fund",
+    "period": "April 2013 - March 2016",
+    "tags": ["beer", "market-analysis", "demand-modelling", "forecasting", "financial-modelling", "cambodia", "investment"],
+    "related": ["consulting-cv-consultant-role", "consulting-cv-skills-modelling-reporting"],
+    "text": "As a Consultant, Felipe managed a market analysis and 10-year demand model of the Cambodian beer market for an international fund worth $110 million."
+  },
+  {
+    "id": "consulting-cv-market-entry-studies",
+    "source": "consulting-cv",
+    "type": "project",
+    "title": "Market entry studies: Myanmar coffee chain and Cambodia life insurance",
+    "org": "Regional coffee chain; international life insurance company",
+    "period": "April 2013 - March 2016",
+    "tags": ["market-entry", "coffee", "insurance", "myanmar", "cambodia", "expansion", "feasibility"],
+    "related": ["consulting-cv-consultant-role"],
+    "text": "As a Consultant, Felipe managed two market entry studies: one for a regional coffee chain looking to expand into Myanmar, and one for an international life insurance company looking to expand into Cambodia."
+  },
+  {
+    "id": "consulting-cv-thai-seafood-labour",
+    "source": "consulting-cv",
+    "type": "project",
+    "title": "Labor practices in the Thai seafood industry",
+    "org": "Multi-stakeholder project",
+    "period": "April 2013 - March 2016",
+    "tags": ["labor-rights", "seafood", "thailand", "migrant-workers", "supply-chain", "recommendations", "development"],
+    "related": ["consulting-cv-consultant-role", "consulting-cv-sector-expertise"],
+    "text": "As a Consultant, Felipe was part of a multi-stakeholder team analyzing labor practices in the Thai seafood industry. The work focused on how the structure of the supply chain affects the rights of migrant workers, and produced recommendations."
+  },
+  {
+    "id": "consulting-cv-rice-contract-farming",
+    "source": "consulting-cv",
+    "type": "project",
+    "title": "Contract farming strategy for a large rice mill",
+    "org": "Large rice mill",
+    "period": "April 2013 - March 2016",
+    "tags": ["rice", "contract-farming", "agriculture", "supply-chain", "farmers", "strategy", "cambodia"],
+    "related": ["consulting-cv-consultant-role", "consulting-cv-sector-expertise"],
+    "text": "As a Consultant, Felipe created a contract farming strategy for a large rice mill. The strategy secured the mill's supply for the following year and improved the prices received by farmers."
+  },
+  {
+    "id": "consulting-cv-regional-fieldwork",
+    "source": "consulting-cv",
+    "type": "summary",
+    "title": "Countries Felipe has worked in across Southeast Asia",
+    "org": null,
+    "period": "April 2013 - June 2021",
+    "tags": ["fieldwork", "southeast-asia", "cambodia", "myanmar", "thailand", "laos", "philippines", "indonesia", "vietnam", "asean"],
+    "related": ["consulting-cv-consultant-role", "consulting-cv-senior-consultant", "consulting-cv-business-development"],
+    "text": "As a Consultant, Felipe conducted fieldwork in Cambodia, Myanmar, Thailand, Laos and the Philippines, and worked on projects focusing on Indonesia and Vietnam. As a Senior Consultant he managed projects across the ASEAN region, was based in Cambodia and then Laos, and pitched for clients in Cambodia, Lao PDR and Myanmar."
+  },
+  {
+    "id": "consulting-cv-qpharma",
+    "source": "consulting-cv",
+    "type": "experience",
+    "title": "Regulatory Specialist at QPharma (New Jersey, USA)",
+    "org": "QPharma",
+    "period": "January 2012 - February 2013",
+    "tags": ["regulatory", "compliance", "pharmaceutical", "nutritional-supplements", "trademark", "uspto", "legal-memos", "new-jersey"],
+    "related": ["consulting-cv-regulatory-legal-background", "education-degrees"],
+    "text": "From January 2012 to February 2013 Felipe was a Regulatory Specialist at QPharma in Morristown, New Jersey, USA. He configured and updated the company's in-house regulatory reporting software with the latest federal and state regulations. He led marketing compliance efforts for pharmaceutical and nutritional supplement clients, avoiding potential fines that could have run into the millions of dollars. He advised small and medium-sized pharmaceutical companies and drafted legal memos on compliance issues, and he led trademark prosecution for his employer, successfully registering two trademarks with the USPTO."
+  },
+  {
+    "id": "consulting-cv-porzio",
+    "source": "consulting-cv",
+    "type": "experience",
+    "title": "Regulatory Analyst at Porzio Life Sciences (New Jersey, USA)",
+    "org": "Porzio Life Sciences",
+    "period": "January 2010 - September 2010",
+    "tags": ["regulatory", "legal-research", "legislative-tracking", "databases", "life-sciences", "new-jersey"],
+    "related": ["consulting-cv-regulatory-legal-background"],
+    "text": "From January to September 2010 Felipe was a Regulatory Analyst at Porzio Life Sciences in Morristown, New Jersey, USA. He led regulatory research and the creation of new regulatory databases, which increased the company's offerings. He managed the legislative tracking and analysis database, keeping information up to date on new and proposed laws affecting client sampling efforts in all 51 US states, and he did legal research and analysis for senior partners for regional and national industry conferences."
+  },
+  {
+    "id": "consulting-cv-regulatory-legal-background",
+    "source": "consulting-cv",
+    "type": "summary",
+    "title": "Felipe's regulatory and legal background",
+    "org": null,
+    "period": "2010 - 2013",
+    "tags": ["legal", "regulatory", "compliance", "intellectual-property", "jurisprudence", "pharmaceutical"],
+    "related": ["consulting-cv-qpharma", "consulting-cv-porzio", "education-degrees", "projects-regulatory-policy-work"],
+    "text": "Before moving into consulting, Felipe built a regulatory and legal background in the USA. He worked as a Regulatory Analyst at Porzio Life Sciences in 2010 and as a Regulatory Specialist at QPharma from 2012 to 2013, advising pharmaceutical and nutritional supplement companies on compliance. He also holds a Master of Science in Jurisprudence in Intellectual Property Law from Seton Hall School of Law, which he completed in December 2011."
+  },
+  {
+    "id": "consulting-cv-skills-modelling-reporting",
+    "source": "consulting-cv",
+    "type": "skill",
+    "title": "Excel modelling, report writing and consulting decks",
+    "org": null,
+    "period": null,
+    "tags": ["excel", "financial-modelling", "data-analysis", "report-writing", "presentations", "vba", "consulting-decks"],
+    "related": ["consulting-cv-beer-market-model", "project-nbp-business-plan", "skills-backend"],
+    "text": "In his consulting career Felipe listed expert knowledge of Excel, particularly financial modelling and the analysis of large datasets, and excellent report writing and consulting deck creation. He also listed beginner-level programming in VBA for applications at that time."
+  },
+  {
+    "id": "consulting-cv-languages",
+    "source": "consulting-cv",
+    "type": "skill",
+    "title": "Languages",
+    "org": null,
+    "period": null,
+    "tags": ["languages", "spanish", "english", "bilingual"],
+    "related": [],
+    "text": "Felipe is fluent in Spanish and English."
+  }
+]

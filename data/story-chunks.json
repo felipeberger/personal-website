@@ -1,0 +1,189 @@
+[
+  {
+    "id": "story-upstream-tests",
+    "source": "software-projects",
+    "type": "story",
+    "title": "Story: adding tests for upstream pricing providers",
+    "org": "CardCastle",
+    "period": "June 2022 - May 2026",
+    "tags": ["testing", "factorybot", "mocking", "pricing", "initiative", "upstream-apis"],
+    "related": ["cardcastle-legacy-testing"],
+    "text": "At CardCastle the business depended on upstream pricing sources whose payload structures were vastly different. The backend had no tests for them: correctness relied on manual testing when each source was implemented, then manual debugging when price update jobs failed. The test suite also did not allow external connections. Felipe took the initiative to create representations of the pricing payloads using the Test Data Builder pattern (FactoryBot), so a payload could be generated at any size, and mocked the upstream responses so the Service Models ran end to end on mocked data instead of mocking the service model's return value. This gave a core business process test coverage for the first time, and sped up pricing-job development because it could run in a spec instead of slow API calls that downloaded files."
+  },
+  {
+    "id": "story-upstream-tests-reflection",
+    "source": "software-projects",
+    "type": "reflection",
+    "title": "Reflection: upstream provider tests (lessons, trade-offs, what he'd change)",
+    "org": "CardCastle",
+    "period": "June 2022 - May 2026",
+    "tags": ["testing", "trade-offs", "lessons", "mocking", "vcr", "drift"],
+    "related": ["story-upstream-tests"],
+    "text": "Felipe learned from the upstream provider tests that external services can be tested without VCR-style tools, which need an internet connection and tend to be flaky. The trade-offs were that recreating each expected payload by hand was still very time consuming, and that the spec payload structures would probably drift from the real ones as providers changed their schemas, causing false positives in specs and failures in production. Looking back, he would invest more in a better-architected, automated mocking system for the external APIs, one that keeps mocked payloads matching each provider's current structure."
+  },
+  {
+    "id": "story-swagger-docs",
+    "source": "software-projects",
+    "type": "story",
+    "title": "Story: refactoring the Swagger API documentation",
+    "org": "CardCastle",
+    "period": "June 2022 - May 2026",
+    "tags": ["documentation", "swagger", "openapi", "maintainability", "initiative", "refactoring"],
+    "related": [],
+    "text": "At CardCastle the Swagger documentation lived in one huge file, which made updating and extending it a nightmare. Felipe split it into a main file that assembles the documentation from separate, reusable component files. The result was a documentation system that was far more maintainable. The lesson he draws is that time spent now is time saved later. The trade-off is that the system could still be complex and unwieldy at times and there may have been better options, but his approach needed no extra gems or dependencies. His only regret is that he didn't do it earlier."
+  },
+  {
+    "id": "story-inventory-system",
+    "source": "software-projects",
+    "type": "story",
+    "title": "Story: building the inventory management system",
+    "org": "CardCastle",
+    "period": "June 2022 - May 2026",
+    "tags": ["inventory", "new-feature", "customer-research", "focus-group", "product", "architecture"],
+    "related": ["cardcastle-inventory"],
+    "text": "An inventory management system had always been on CardCastle's roadmap. Engineering and customer service designed a chaos-warehousing-based system meant to work for users of various sizes, and a focus group validated the initial design. Felipe was responsible for implementing and testing it. He helped draft the focus group discussion guide, drawing on his earlier customer research experience, and analyzed the results to finalize the system architecture. He implemented the system as designed but found areas to improve, and the final version had fewer classes and models than the initial design while keeping all the expected features."
+  },
+  {
+    "id": "story-inventory-system-reflection",
+    "source": "software-projects",
+    "type": "reflection",
+    "title": "Reflection: inventory management system (lessons, trade-offs, what he'd change)",
+    "org": "CardCastle",
+    "period": "June 2022 - May 2026",
+    "tags": ["inventory", "product-market-fit", "trade-offs", "lessons", "onboarding", "product-thinking"],
+    "related": ["story-inventory-system"],
+    "text": "Felipe's main lesson from the inventory project is that more time should have gone into product/market fit. Chaos warehousing suited the hardware the company produced, but it was not what most users already used. To compensate, features were added so non-chaos-warehousing users could benefit too, but users who weren't fully on board weren't interested in half solutions. He would now be more prescriptive instead of complicating the system, and build a suite of inventory tools rather than one integrated system, since operational workflows differed greatly between sellers. He would also build onboarding tools that import a CSV or similar document, removing the setup hurdle for time-poor users."
+  },
+  {
+    "id": "story-sql-performance",
+    "source": "software-projects",
+    "type": "story",
+    "title": "Story: fixing slow and timing-out queries under load",
+    "org": "CardCastle",
+    "period": "June 2022 - May 2026",
+    "tags": ["performance", "sql", "postgresql", "n+1", "indexing", "explain-analyze", "activerecord", "debugging"],
+    "related": ["cardcastle-performance"],
+    "text": "Some queries at CardCastle were sporadically timing out for key users when the database was under heavy load, and for some users they were getting steadily slower. The goal was to improve performance for key customers and for the system under load. Observability tooling flagged several slow routes, including N+1 queries. Felipe used EXPLAIN ANALYZE and the observability tools to find the slow queries and understand their plans, and reproduced the problem in the staging database by reading and writing large numbers of records, which also let him test fixes. The fixes were hand-written SQL in place of ActiveRecord for the worst queries, better and covering indexes, and batch record creation with INSERT instead of the Rails ORM. Large queries and record creation stopped timing out and ran faster."
+  },
+  {
+    "id": "story-sql-performance-reflection",
+    "source": "software-projects",
+    "type": "reflection",
+    "title": "Reflection: SQL performance work (lessons, trade-offs, what he'd change)",
+    "org": "CardCastle",
+    "period": "June 2022 - May 2026",
+    "tags": ["performance", "trade-offs", "lessons", "activerecord", "sql-injection", "orm", "indexing"],
+    "related": ["story-sql-performance"],
+    "text": "Felipe says the performance work taught him how to properly investigate N+1 and other performance problems, which hadn't mattered before because usage was low. The trade-off was moving away from ActiveRecord: the SQL was less readable, potentially less maintainable, and more exposed to injection unless sanitized, but performance became much easier to manage. In hindsight, an intermediate solution using more of the Rails ORM's own tools (caching, strict_loading, includes) and more nuanced indexing might have delayed the move to hardcoded SQL. He accepts that hand-written SQL might still have been needed if the system kept scaling."
+  },
+  {
+    "id": "story-exporter-refactor",
+    "source": "software-projects",
+    "type": "story",
+    "title": "Story: refactoring the data export system",
+    "org": "CardCastle",
+    "period": "June 2022 - May 2026",
+    "tags": ["exports", "performance", "refactoring", "batching", "temporary-tables", "csv", "scale"],
+    "related": ["cardcastle-performance"],
+    "text": "The export system was a core CardCastle feature, but its performance degraded as the number and size of exports grew, sometimes causing jobs to fail. Felipe worked with a senior engineer to redesign it: instead of instantiating every record before pulling its data into the CSV, the new design used temporary tables and inserted data directly into the CSV in batches. Performance improved by over 70% for the largest exports, and the redesign made it much easier to add new exporters."
+  },
+  {
+    "id": "story-exporter-refactor-reflection",
+    "source": "software-projects",
+    "type": "reflection",
+    "title": "Reflection: export system refactor (lessons, trade-offs, what he'd change)",
+    "org": "CardCastle",
+    "period": "June 2022 - May 2026",
+    "tags": ["exports", "object-oriented", "functional", "design", "trade-offs", "lessons", "orm-limits", "abstraction"],
+    "related": ["story-exporter-refactor"],
+    "text": "From the export refactor Felipe learned that a system can work well until it is under load, and he learned the ORM's limits when pulling data from many records, plus how batching, INSERT and temporary tables work at scale. The trade-off is that each new exporter still needs its own class, because aggregation and column names differ. He now thinks the object-oriented design added coupling and complexity: the abstract classes became mandatory but abstracted very little code. He believes a functional-style design would have been better, with one general system that takes a settings object and a data object and produces the export, so a new exporter is only a settings definition rather than a new class."
+  },
+  {
+    "id": "story-pricing-bugs",
+    "source": "software-projects",
+    "type": "story",
+    "title": "Story: fixing inconsistent pricing bugs and adding cross-cutting tests",
+    "org": "CardCastle",
+    "period": "June 2022 - May 2026",
+    "tags": ["bug-fixing", "pricing", "sql", "migrations", "materialized-views", "integration-tests", "debugging"],
+    "related": ["cardcastle-legacy-testing", "cardcastle-support"],
+    "text": "Pricing information across CardCastle's platform began showing incorrect, internally inconsistent and wrongly counted values after the price models were extended with more data and materialized views were introduced to aggregate pricing. Felipe asked for sample payloads and traced the problem to a recent migration that extended the price records: legacy table joins were pulling in unexpected data, while newer joins accounted for the extended records. He fixed it by moving the price joins into a helper class that generates the SQL instead of hardcoding it in each place. He also built an integration test suite that compares endpoints providing related pricing data under the same context. All price endpoints now share the same logic and response payload, and the cross-cutting tests keep them aligned."
+  },
+  {
+    "id": "story-pricing-bugs-reflection",
+    "source": "software-projects",
+    "type": "reflection",
+    "title": "Reflection: pricing bugs and cross-cutting tests (lessons, trade-offs, what he'd change)",
+    "org": "CardCastle",
+    "period": "June 2022 - May 2026",
+    "tags": ["testing", "test-suite", "trade-offs", "lessons", "drift", "technical-debt", "integration-tests"],
+    "related": ["story-pricing-bugs"],
+    "text": "Felipe's lessons from the pricing bugs: unit tests are not enough in some situations, and extending models can cause drift where different implementations stop aligning as a codebase grows. The cross-cutting integration test was a hack, effectively an MVP, driven by a large, complex, flaky and scattered test suite, and it was never formalized before he left. With more time he would have refactored the test suite together with his senior engineer: creating standard, reusable contexts that cover all pricing edge cases, and gradually moving from namespace-based tests toward per-endpoint tests for large mission-critical endpoints and tests organized by functional domain."
+  },
+  {
+    "id": "story-rust-migration",
+    "source": "software-projects",
+    "type": "story",
+    "title": "Story: migrating a 12-hour background job to a Rust microservice",
+    "org": "CardCastle",
+    "period": "June 2022 - May 2026",
+    "tags": ["rust", "microservice", "background-jobs", "performance", "migration", "learning", "third-party-data"],
+    "related": ["cardcastle-rust-migration"],
+    "text": "At CardCastle, Felipe worked on migrating a daily background job to a Rust microservice. The job pulled large amounts of data from a third-party source to populate price records and took about 12 hours to run. He learned Rust and its ecosystem while recreating the functionality: pulling and parsing the third-party data, matching it against existing records, and returning data the backend could easily ingest to batch-create price records. The key insight was that Rails was slow at heavy computation while Rust could parse the data far faster and diff the current and new data, so the backend only had to insert what the service returned. Execution time dropped by 66%. This was not an end-to-end project owned by him alone."
+  },
+  {
+    "id": "story-rust-migration-reflection",
+    "source": "software-projects",
+    "type": "reflection",
+    "title": "Reflection: Rust microservice migration (trade-offs, what he'd change)",
+    "org": "CardCastle",
+    "period": "June 2022 - May 2026",
+    "tags": ["rust", "microservice", "trade-offs", "documentation", "handoff", "coupling", "debugging"],
+    "related": ["story-rust-migration"],
+    "text": "The trade-offs of the Rust microservice were that it was tightly coupled to the backend, since it only moved the logic somewhere else, and that Rust was harder to debug than Ruby. Looking back, Felipe would spend more time with his senior engineer documenting the microservice, which had many dependencies and architectural decisions that were hard to parse at first. A more intensive hand-off, rather than a lower-touch one that needed extra help from the senior engineer later, would have let him work more effectively."
+  },
+  {
+    "id": "approach-bug-triage",
+    "source": "software-projects",
+    "type": "approach",
+    "title": "How Felipe triages bugs",
+    "org": "CardCastle",
+    "period": "June 2022 - May 2026",
+    "tags": ["bug-triage", "prioritization", "process", "observability", "bugsnag", "datadog", "support"],
+    "related": ["cardcastle-support", "story-bug-triage-meeting"],
+    "text": "Felipe's bug triage process has five steps: collect enough information to reproduce the bug and reproduce it; categorize it (UI, performance, security, compatibility, logic, usability or functional); prioritize it (high, medium, low or no action) based on impact on customers, reputation and the bottom line; assign it to the right person or team; and track it to resolution. He distinguishes priority from severity, and personally prioritizes bugs affecting customer experience, VIP customers or the usability of the platform. To improve triage he recommends tracking what breaks and where (by route or area of code), logging bugs with screenshots or recordings in a tool like Notion, sending Bugsnag and Datadog alerts to Slack, and using git heatmaps to see where code changes most."
+  },
+  {
+    "id": "approach-incomplete-information",
+    "source": "software-projects",
+    "type": "approach",
+    "title": "How Felipe makes decisions with incomplete information",
+    "org": null,
+    "period": null,
+    "tags": ["decision-making", "risk", "uncertainty", "judgement", "stakeholders"],
+    "related": [],
+    "text": "When he has to decide with incomplete information, Felipe asks what is known and what isn't, and whether the gap can be bridged with proxy or comparable data. He then lists options, weighs the risk of each and how to minimize it, and considers what matters most to clients or the specific client affected, plus the impact on the bottom line and reputation. He favors the option most likely to solve the problem, even if only partially."
+  },
+  {
+    "id": "story-incident-job-oom",
+    "source": "software-projects",
+    "type": "story",
+    "title": "Incident: background job pod crashing from a memory misconfiguration",
+    "org": "CardCastle",
+    "period": "June 2022 - May 2026",
+    "tags": ["incident", "debugging", "kubernetes", "yaml", "memory", "background-jobs", "mistake", "learning"],
+    "related": ["cardcastle-support"],
+    "text": "Users of a background export job Felipe had built weeks earlier kept reporting they never received their exports. The job's pod was repeatedly running out of memory, but no error was emitted and this wasn't known at first. The specs passed, and large-dataset edge cases that reproduced the failing scenario passed too. A senior engineer reviewing the job's YAML pod configuration spotted that memory had been set as 500m instead of 500M (megabytes), so the pod was starved of memory and crashed under anything above minimal load. Felipe learned how much capitalization matters in YAML resource notation, and that a configuration error can look like a code bug."
+  },
+  {
+    "id": "story-bug-triage-meeting",
+    "source": "software-projects",
+    "type": "story",
+    "title": "Story: changing how engineering and customer service handle bugs",
+    "org": "CardCastle",
+    "period": "June 2022 - May 2026",
+    "tags": ["team-process", "bug-triage", "collaboration", "customer-service", "process-improvement", "trello"],
+    "related": ["approach-bug-triage"],
+    "text": "Bug handling at CardCastle used to be ad hoc: bugs piled up in a large Trello backlog, the weekly engineering meeting was spent reviewing them, or bugs were worked on as they arrived, often without the information needed to reproduce them. The change that worked well was a separate, short bug meeting between the engineers and the customer service reps, where uncategorized and unprioritized bugs got a priority and category, were assigned to the right team, and had reproduction steps identified where possible. It also changed the relationship between customer service and engineering, so they worked together instead of customer service being just a channel between customers and engineers."
+  }
+]
