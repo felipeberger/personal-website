@@ -337,3 +337,31 @@ a {
   flex: 1 1 14rem;
   margin: 0;
 }
+
+/* CV download button */
+.cv-download {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.15s ease, transform 0.1s ease;
+}
+
+.cv-download:hover {
+  opacity: 0.9;
+}
+
+.cv-download:active {
+  transform: scale(0.98);
+}
+
+.cv-download:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}

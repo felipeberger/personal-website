@@ -15,7 +15,7 @@ export interface RoleGroup {
 
 export const cv = {
   name: 'Felipe Berger',
-  headline: 'Product Engineer | Ruby on Rails, Rust, React, TypeScript, PostgreSQL, Azure',
+  headline: 'Product Engineer | Ruby on Rails, Rust, C#, React, TypeScript, PostgreSQL, Azure',
   location: 'Canberra, ACT, Australia',
   links: {
     github: 'https://github.com/felipeberger',
@@ -143,7 +143,7 @@ export const cv = {
   ],
 
   skills: [
-    { label: 'Backend and data', items: ['Ruby on Rails', 'Rust', 'REST APIs', 'Webhooks', 'PostgreSQL', 'GraphQL'] },
+    { label: 'Backend and data', items: ['Ruby on Rails', 'Rust', 'C#', 'REST APIs', 'Webhooks', 'PostgreSQL', 'GraphQL'] },
     { label: 'Frontend', items: ['JavaScript', 'TypeScript', 'HTML', 'CSS', 'Vue', 'React'] },
     { label: 'Testing', items: ['RSpec', 'FactoryBot', 'TDD', 'Unit testing', 'Integration testing'] },
     { label: 'Cloud and tooling', items: ['AWS', 'Git', 'Linux', 'GitLab CI/CD', 'Datadog', 'Bugsnag'] },

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type KeyboardEvent } from 'react';
 import CvView from '../cv/CvView';
 import { ChatError, streamChat, type ChatTurn } from './streamChat';
+import { downloadCvPdf } from '../cv/CvPdf';
 
 const DEFAULT_PROMPT = "Show me Felipe's CV";
 const MAX_INPUT = 600; // matches the API's limit for visitor messages
@@ -14,6 +15,7 @@ const SUGGESTIONS = [
   'What is his consulting experience?',
   'Which roles is he looking for?',
   'Is he available to start now?',
+  'Download CV',
 ];
 
 interface UiMessage extends ChatTurn {
@@ -24,6 +26,14 @@ interface UiMessage extends ChatTurn {
 function isCvRequest(q: string): boolean {
   const words = q.trim().split(/\s+/).length;
   return words <= 8 && /(^|\W)(cv|resume|résumé)(\W|$)/i.test(q);
+}
+
+/** Detect "download/save/export CV" requests. */
+function isDownloadCvRequest(q: string): boolean {
+  const words = q.trim().split(/\s+/).length;
+  return words <= 8 &&
+    /(^|\W)(download|save|export|get)(\W|$)/i.test(q) &&
+    /(cv|resume|résumé)/i.test(q);
 }
 
 export default function Chat() {
@@ -68,6 +78,17 @@ export default function Chat() {
     setError(null);
     setInput('');
     const asked: UiMessage = { role: 'user', content: question };
+
+    if (isDownloadCvRequest(question)) {
+      setMessages((prev) => [...prev, asked, { role: 'assistant', content: 'Preparing your CV download...' }]);
+      try {
+        await downloadCvPdf();
+        setMessages((prev) => [...prev.slice(0, -1), { role: 'assistant', content: "CV downloaded! Check your downloads folder." }]);
+      } catch {
+        setMessages((prev) => [...prev.slice(0, -1), { role: 'assistant', content: "Sorry, couldn't generate the PDF. Try again?" }]);
+      }
+      return;
+    }
 
     if (isCvRequest(question)) {
       showCvTopRef.current = true;

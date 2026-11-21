@@ -1,6 +1,15 @@
 import { cv } from './cv';
+import { downloadCvPdf } from './CvPdf';
 
 export default function CvView() {
+  const handleDownload = async () => {
+    try {
+      await downloadCvPdf();
+    } catch {
+      alert("Sorry, couldn't generate the PDF. Try again?");
+    }
+  };
+
   return (
     <article className="cv" aria-label={`${cv.name}'s CV`}>
       <header className="cv-head">
@@ -13,6 +22,9 @@ export default function CvView() {
           <a href={cv.links.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>{' '}
           <a href={`mailto:${cv.links.email}`}>Email</a>
         </p>
+        <button className="cv-download" onClick={handleDownload} type="button">
+          Download PDF
+        </button>
       </header>
 
       <section>
